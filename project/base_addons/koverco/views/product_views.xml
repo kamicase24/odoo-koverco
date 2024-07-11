@@ -1,0 +1,34 @@
+<odoo>
+    <data>
+        <record id="product_qr_result_tree_view" model="ir.ui.view">
+            <field name="name">product.qr.result.tree.view</field>
+            <field name="model">product.qr.result</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                    <field name="sku"/>
+                    <field name="lot_number"/>
+                    <field name="qty"/>
+                    <field name="date"/>
+                    <field name="create_date"/>
+                    <field name="write_date"/>
+                </tree>            
+            </field>
+        </record>
+
+
+        <record model="ir.actions.act_window" id="product_qr_result_action">
+            <field name="name">product.qr.result.action</field>
+            <field name="res_model">product.qr.result</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+
+        <menuitem
+           id="product_qr_result_menuitem"
+           name="QR resultado para productos"
+           action="koverco.product_qr_result_action"
+           parent="stock.menu_stock_inventory_control"
+        />
+    </data>
+</odoo>
