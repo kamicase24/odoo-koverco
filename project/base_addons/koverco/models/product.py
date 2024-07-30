@@ -28,7 +28,7 @@ class ProductQrResult(models.Model):
             if product_id:
                 log.info(product_id)
                 log.info(f'Product encontrado {product_id}')
-J
+
                 # Create lot record
                 lot_number = product_qr_result_id.lot_number
                 if lot_number:
