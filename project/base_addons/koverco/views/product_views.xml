@@ -12,6 +12,7 @@
                     <field name="date"/>
                     <field name="create_date"/>
                     <field name="write_date"/>
+                    <button name="process_qr_data" string="Procesar" type="object" />
                 </tree>            
             </field>
         </record>
